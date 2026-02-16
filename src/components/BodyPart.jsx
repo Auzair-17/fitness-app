@@ -1,5 +1,5 @@
 import React from "react";
-import { Stack } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
 import icon from "../assets/icons/gym.png";
 
 const BodyPart = ({ item, setBodyPart, bodyPart }) => {
@@ -18,8 +18,19 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => {
         cursor: "pointer",
         borderBottomLeftRadius: "20px",
       }}
+      onClick={() => {
+        setBodyPart(item);
+        window.scrollTo({ top: 1800, left: 100, behavior: "smooth" });
+      }}
     >
       <img src={icon} alt="dumbell" style={{ width: "40px", height: "40px" }} />
+      <Typography
+        fontSize="24px"
+        fontWeight="bold"
+        sx={{ textTransform: "capitalize", color: "#3a1212" }}
+      >
+        {item}
+      </Typography>
     </Stack>
   );
 };
