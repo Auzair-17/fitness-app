@@ -22,7 +22,6 @@ const ExcerciseCard = ({ excercise }) => {
         const blob = await response.blob();
         objectUrl = URL.createObjectURL(blob);
         setGifUrl(objectUrl);
-        console.log(gifUrl);
       } catch (err) {
         console.error(err);
       }
