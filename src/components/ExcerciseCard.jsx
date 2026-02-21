@@ -4,7 +4,6 @@ import { excerciseOptions } from "../utils/fetchData";
 import { Button, Stack, Typography } from "@mui/material";
 
 const ExcerciseCard = ({ excercise }) => {
-  console.log(excercise);
   const [gifUrl, setGifUrl] = useState(null);
 
   useEffect(() => {
