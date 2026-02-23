@@ -25,8 +25,6 @@ const Detail = ({ excerciseDetail }) => {
     },
   ];
 
-  console.log(excerciseDetail);
-
   useEffect(() => {
     let objectUrl;
 
